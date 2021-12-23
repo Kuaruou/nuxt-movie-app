@@ -45,5 +45,9 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  env: {
+    movieDBApiKey: process.env.MOVIEDB_API_KEY
   }
 }

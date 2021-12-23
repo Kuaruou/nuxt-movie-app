@@ -95,6 +95,13 @@ export default {
       searchInput: '',
     }
   },
+  async fetch() {
+    if (this.searchInput === '') {
+      await this.getMovies()
+      return
+    }
+    await this.searchMovies()
+  },
   head() {
     return {
       title: 'Movie App - Lastest Streaming Movies Info',
@@ -112,31 +119,21 @@ export default {
       ]
     }
   },
-  async fetch() {
-    if (this.searchInput === '') {
-      await this.getMovies()
-      return
-    }
-    await this.searchMovies()
-  },
   fetchDelay: 1000,
   methods: {
     async getMovies() {
-      const data = axios.get('https://api.themoviedb.org/3/movie/now_playing?api_key=25ee56727a3a70a312ddf6a8ca0cab25&language=en-US&page=1')
+      const data = axios.get(`https://api.themoviedb.org/3/movie/now_playing?api_key=${process.env.movieDBApiKey}&language=en-US&page=1`)
       const result = await data
-      // console.log(result.data)
       result.data.results.forEach((movie) => {
         this.movies.push(movie)
       })
-      // console.log('hihi')
     },
     async searchMovies () {
-      const data = axios.get(`https://api.themoviedb.org/3/search/movie?api_key=25ee56727a3a70a312ddf6a8ca0cab25&language=en-US&page=1&query=${this.searchInput}`)
+      const data = axios.get(`https://api.themoviedb.org/3/search/movie?api_key=${process.env.movieDBApiKey}&language=en-US&page=1&query=${this.searchInput}`)
       const result = await data
       result.data.results.forEach((movie) => {
         this.searchedMovies.push(movie)
       })
-      // console.log(this.searchedMovies)
     },
     clearSearch() {
       this.searchInput = ''
