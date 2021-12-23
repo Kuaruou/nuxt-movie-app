@@ -45,7 +45,7 @@
                   })
                 }}
             </p>
-            <NuxtLink class="button button-light" :to="{ name: 'movies-movieid', params: { movieId: movie.id }}">
+            <NuxtLink class="button button-light" :to="{ name: 'movies-movieid', params: { movieid: movie.id }}">
               Get More Info
             </NuxtLink>
           </div>
@@ -75,7 +75,7 @@
                   })
                 }}
             </p>
-            <NuxtLink class="button button-light" :to="{ name: 'movies-movieid', params: { movieId: movie.id }}">
+            <NuxtLink class="button button-light" :to="{ name: 'movies-movieid', params: { movieid: movie.id }}">
               Get More Info
             </NuxtLink>
           </div>
