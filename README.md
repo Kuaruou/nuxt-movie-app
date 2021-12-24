@@ -25,6 +25,6 @@ For detailed explanation on how things work, check out the [documentation](https
 
 ```bash
 # After update to Github
-$ heroku git:remote -a movie-app-nuxt-vue3
+$ heroku git:remote -a movie-app-nuxt-vue3 (Project name on Heroku, not Github)
 $ git push heroku master
 ```
