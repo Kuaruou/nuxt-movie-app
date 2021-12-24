@@ -23,8 +23,8 @@ For detailed explanation on how things work, check out the [documentation](https
 
 ## Update changes to Heroku
 
+```bash
 # After update to Github
-
-# heroku git:remote -a movie-app-nuxt-vue3
-
-# git push heroku master
+$ heroku git:remote -a movie-app-nuxt-vue3
+$ git push heroku master
+```
