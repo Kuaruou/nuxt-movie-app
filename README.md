@@ -22,6 +22,9 @@ $ npm run generate
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
 
 ## Update changes to Heroku
-$ After update to Github
-$ heroku git:remote -a movie-app-nuxt-vue3
-$ git push heroku master
+
+# After update to Github
+
+# heroku git:remote -a movie-app-nuxt-vue3
+
+# git push heroku master
