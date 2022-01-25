@@ -4,7 +4,7 @@
 
 ## A practice of Nuxt from https://github.com/johnkomarnicki/movies-app-nuxtjs/tree/master/movieapp
 
-## Build Setup
+### Build Setup
 
 ```bash
 # install dependencies
