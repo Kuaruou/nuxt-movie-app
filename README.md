@@ -2,6 +2,8 @@
 
 ### [[網站連結]](https://movie-app-nuxt-vue3.herokuapp.com/) ###
 
+## A practice of Nuxt from https://github.com/johnkomarnicki/movies-app-nuxtjs/tree/master/movieapp
+
 ## Build Setup
 
 ```bash
